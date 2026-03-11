@@ -1,23 +1,20 @@
-package com.example;
-
 public class Main {
+
     public static void main(String[] args) {
 
+        Libro libro1 = new Libro("Java Basico", "Juan", 5, 1);
 
-        Persona persona1 = new Persona("Juan", "Pérez", 12345678, 1990);
-        Persona persona2 = new Persona("María", "Gómez", 87654321, 1985);
+        LibroTextoUNIAC libroUNIAC =
+                new LibroTextoUNIAC("POO", "Carlos", 10, 2, "Programacion", "Ingenieria");
 
-        System.out.println("Datos de la persona 1:");
-        persona1.imprimirDatos();
+        Novela novela =
+                new Novela("El misterio", "Ana", 4, 1, "Policiaca");
 
-        System.out.println("\nDatos de la persona 2:");
-        persona2.imprimirDatos();
+        libro1.prestamo();
+        libro1.devolucion();
 
-        persona1.calcularEdad(2026);
-        persona2.calcularEdad(2026);
-
-        System.out.println("\nEdad de la persona 1: " + persona1.calcularEdad(2026) + " años");
-        System.out.println("Edad de la persona 2: " + persona2.calcularEdad(2026) + " años");
-        
+        System.out.println(libro1);
+        System.out.println(libroUNIAC);
+        System.out.println(novela);
     }
 }

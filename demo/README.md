@@ -1,28 +1,32 @@
-# Diagrama de Clases
+Proyecto Biblioteca - Parcial Programación II
 
-```mermaid
-classDiagram
-    class Persona {
-        - String nombre
-        - String apellido
-        - int numeroDocumento
-        - int añoNacimiento
-        + Persona(String nombre, String apellido, int numeroDocumento, int añoNacimiento)
-        + String getNombre()
-        + void setNombre(String nombre)
-        + String getApellido()
-        + void setApellido(String apellido)
-        + int getNumeroDocumento()
-        + void setNumeroDocumento(int numeroDocumento)
-        + int getAñoNacimiento()
-        + void setAñoNacimiento(int añoNacimiento)
-        + void imprimirDatos()
-        + int calcularEdad(int añoActual)
-    }
+Integrantes
+- Andres Mauricio Rueda
+- Mariana Muñoz Latorre
 
-    class Main {
-        + void main(String[] args)
-    }
+Descripción
+Sistema de gestión de libros aplicando conceptos de POO:
 
-    Main --> Persona
-```
+- Abstracción
+- Encapsulamiento
+- Herencia
+
+Clases implementadas
+
+- Libro
+- LibroTexto
+- LibroTextoUNIAC
+- Novela
+
+ Funcionalidad
+
+Permite:
+
+- Registrar libros
+- Realizar préstamos
+- Realizar devoluciones
+- Mostrar información de libros
+
+ UML
+![alt text](image.png)
+Ver archivo UML.md
